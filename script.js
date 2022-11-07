@@ -1,12 +1,12 @@
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
-var linerGradient = document.querySelector("p");
+var linearGradient = document.querySelector("p");
 var body = document.getElementById("gradient");
 var random = document.querySelector(".random-button");
 
 const addGradient = () => {
-  body.style.backgroundImage = `linear-gradient(to right,${color1.value},${color2.value})`;
-  linerGradient.textContent = "background: " + body.style.backgroundImage + ";";
+  body.style.background = `linear-gradient(to right,${color1.value},${color2.value})`;
+  linearGradient.textContent = "background: " + body.style.background + ";";
 };
 
 const HSLToHex = (hsl) => {
@@ -17,7 +17,6 @@ const HSLToHex = (hsl) => {
     s = hsl[1].substr(0, hsl[1].length - 1) / 100,
     l = hsl[2].substr(0, hsl[2].length - 1) / 100;
 
-  // Strip label and convert to degrees (if necessary)
   if (h.indexOf("deg") > -1) h = h.substr(0, h.length - 3);
   else if (h.indexOf("rad") > -1)
     h = Math.round(h.substr(0, h.length - 3) * (180 / Math.PI));
@@ -78,8 +77,8 @@ const setRandomColors = () => {
   const randomColor2 = randomColor();
   color1.value = HSLToHex(randomColor1);
   color2.value = HSLToHex(randomColor2);
-  body.style.backgroundImage = `linear-gradient(to right,${randomColor1},${randomColor2})`;
-  linerGradient.textContent = "background: " + body.style.backgroundImage + ";";
+  body.style.background = `linear-gradient(to right,${randomColor1},${randomColor2})`;
+  linearGradient.textContent = "background: " + body.style.backgroundImage + ";";
 };
 
 

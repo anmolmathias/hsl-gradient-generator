@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <title>Gradient Generator</title>
     <link
       rel="stylesheet"
@@ -12,27 +14,29 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body id="gradient">
-    <div id="container">
+    <div class="container">
       <h1>Gradient Generator</h1>
-    </div>
-    <label for="colors">Pick colors</label>
-    <input class="color1" type="color" value="#4df30c" />
-    <input class="color2" type="color" value="#09afe2" />
-    <label for="property">CSS Gradient property</label>
-    <div class="linear-gradient">
-      <p id="css-property">
-        background: linear-gradient(to right, rgb(250, 23, 23), rgb(255, 255,
-        37));
-      </p>
-      <div class="tooltip">
-        <button onclick="copyFunction()">
-          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-          <i class="fas fa-2x fa-copy"></i>
-        </button>
+      <label for="colors">Pick colors</label>
+      <div class="color-input">
+        <input class="color1" type="color" value="#4df30c" />
+        <input class="color2" type="color" value="#09afe2" />
       </div>
-    </div>
-    <div class="random">
-      <button class="random-button">Generate Random Gradient</button>
+      <label for="property">CSS Gradient property</label>
+      <div class="linear-gradient">
+        <p id="css-property">
+          background: linear-gradient(to right, rgb(250, 23, 23), rgb(255, 255,
+          37));
+        </p>
+        <div class="tooltip">
+          <button onclick="copyFunction()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            <i class="fas fa-2x fa-copy"></i>
+          </button>
+        </div>
+      </div>
+      <div class="random">
+        <button class="random-button">Generate Random Gradient</button>
+      </div>
     </div>
 
     <script type="text/javascript" src="./script.js"></script>
