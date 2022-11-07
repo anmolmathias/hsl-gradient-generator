@@ -39,6 +39,7 @@ body {
   letter-spacing: 0.3em;
   padding: 30px;
   text-align: center;
+  overflox: hidden;
 }
 
 .linear-gradient button {
