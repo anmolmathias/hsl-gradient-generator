@@ -14,10 +14,9 @@ It is sometimes preferable in working with art materials, digitized images, or o
 ### Limitations
 While the HSL color model has been designed to make color-picking easier for human beings, it is not perfect. One reason for this is the assigning of the same lightness to all three primaries. In the sRGB space primaries are assigned different positions on the y axis. When transforming these definitions of primary red, green, and blue back into XYZ space, differences in the Y component remain. Therefore, the primaries as defined for the sRGB space do not have the same perceived brightness, which means lightness in the HSL model is not the same as perceived brightness. This becomes apparent when comparing the HSL colors of maximum saturation and lightness 12 with a gray-scale image of the true perceived brightness values. 
 
-### Install
-1. Clone this repository
-2. `cd` into the folder and install dependencies with `npm install`
-3. `npm start`
+### Run
+1. Clone the repository
+2. Open `index.html` in a browser
 
 ## Licenses
 This README is licensed under a
