@@ -1,4 +1,4 @@
-# Linear Gradient Generator
+# [Linear Gradient Generator](https://anmolmathias.github.io/hsl-gradient-generator/)
 Lets you select two colors for a linear gradient and generates css-property for easy copy-paste. Also generates randomized linear gradients in the HSL color space. [Check it out.](https://anmolmathias.github.io/hsl-gradient-generator/)
 
 ### HSL
